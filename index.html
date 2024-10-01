@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">ALTERAR COR DA PAGINA USANDO CONST</h1>
+    <button onclick="mudarcor()">clique para mudar cor</button>
+
+    <script>
+        const cores = [
+            'url (MINIOS.jpg)',
+             'url(MINIOS2.jpeg)', 
+             'url(MINIOS3.jpeg)' ];
+            let indiceCor = 0;
+             
+            function mudarcor() {
+                document.body.style.backgroundImage= cores [indiceCor];
+                indiceCor = [indiceCor+1] % cores.length            }
+    </script>
+</body>
+</html>
